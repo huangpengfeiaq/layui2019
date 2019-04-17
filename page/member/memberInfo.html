@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>用户详情--Layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="../../css/public.css" media="all"/>
+</head>
+<body class="childrenBody">
+<form class="layui-form layui-row layui-col-space10">
+    <div class="layui-col-md12 layui-col-xs12">
+        <div class="layui-row layui-col-space10">
+            <div class="layui-col-md3 layui-col-xs6">
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">编号</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input id" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input username" lay-verify="username"
+                               placeholder="未填写" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">手机号</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input phone" lay-verify="phone"
+                               placeholder="未填写" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">身份证号</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input idNumber" lay-verify="idNumber"
+                               placeholder="未填写" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md3 layui-col-xs6">
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">上级ID</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input userId" placeholder="无" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">下级人数</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input inviteNumber" placeholder="0" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">累计总收益</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input earn" placeholder="无" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">可提现余额</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input balance" placeholder="无" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md3 layui-col-xs6">
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">职业身份</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input profession" placeholder="未填写" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">本地公积金</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input accumulationFund" placeholder="无" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">本地社保</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input social_security" placeholder="无" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">商业保险</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input commercial_insurance" placeholder="无" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md3 layui-col-xs6">
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">是否信贷员</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input status" placeholder="否" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">信用情况</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input credit" placeholder="无" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">绑定账户</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input bind" placeholder="未绑定" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">创建时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input createDate" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md1 layui-col-xs0"></div>
+            <div class="layui-col-md5 layui-col-xs6">
+                <div class="layui-upload-list thumbBox5 mag0 magt3">
+                    <img class="layui-upload-img thumbImg id_front">
+                </div>
+            </div>
+            <div class="layui-col-md1 layui-col-xs0"></div>
+            <div class="layui-col-md5 layui-col-xs6">
+                <div class="layui-upload-list thumbBox5 mag0 magt3">
+                    <img class="layui-upload-img thumbImg id_back">
+                </div>
+            </div>
+        </div>
+<!--        <div class="layui-form-item magb0">-->
+<!--            <hr class="layui-bg-gray"/>-->
+<!--            <div class="layui-right">-->
+<!--                <a class="layui-btn" lay-filter="addNews" lay-submit><i-->
+<!--                        class="layui-icon">&#xe609;</i>确认更新</a>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</form>
+<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../../layui/layui.js"></script>
+<script type="text/javascript" src="memberInfo.js"></script>
+</body>
+</html>

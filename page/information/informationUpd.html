@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>资讯列表--Layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="../../css/public.css" media="all"/>
+</head>
+<body class="childrenBody">
+<form class="layui-form layui-row layui-col-space10">
+    <div class="layui-col-md12 layui-col-xs12">
+        <div class="layui-row layui-col-space10">
+            <div class="layui-col-md7 layui-col-xs7">
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">编号</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input layui-disabled id" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">文章标题</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input articleTitle" lay-verify="required|articleTitle"
+                               placeholder="必填">
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <label class="layui-form-label">简介</label>
+                    <div class="layui-input-block">
+                        <textarea class="layui-textarea introduction" placeholder="请输入内容"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item magt3">
+                    <!--<div class="layui-row">-->
+                        <!--<label class="layui-form-label">分类</label>-->
+                        <!--<div class="layui-input-block">-->
+                            <!--<div class="layui-col-md4">-->
+                                <!--<select name="category" class="category">-->
+                                    <!--<option value="">请选择类别</option>-->
+                                    <!--<option value="公告">公告</option>-->
+                                    <!--<option value="新闻">新闻</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                            <!--<div class="layui-col-md8">-->
+                                <label class="layui-form-label">创建时间</label>
+                                <div class="layui-input-block">
+                                    <input type="text" class="layui-input layui-disabled createDate" disabled>
+                                </div>
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="layui-col-md5 layui-col-xs5">
+                <div class="layui-upload-list thumbBox mag0 magt3" id="test1">
+                    <img class="layui-upload-img thumbImg" id="demo1">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item magb0">
+            <label class="layui-form-label">文章内容</label>
+            <div class="layui-input-block">
+                  <textarea class="layui-textarea layui-hide" name="content" id="content"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item magb0">
+            <hr class="layui-bg-gray"/>
+            <div class="layui-right">
+                <a class="layui-btn" lay-filter="addNews" lay-submit><i
+                        class="layui-icon">&#xe609;</i>确认更新</a>
+            </div>
+        </div>
+    </div>
+</form>
+<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../../layui/layui.js"></script>
+<script type="text/javascript" src="informationUpd.js"></script>
+</body>
+</html>

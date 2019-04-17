@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>管理员列表--Layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="../../css/public.css" media="all"/>
+</head>
+<body class="childrenBody">
+<form class="layui-form">
+    <table id="list" lay-filter="test"></table>
+    <!--头部工具条-->
+    <script type="text/html" id="toolbarDemo">
+        <div class="layui-input-inline">
+            <input type="text" class="layui-input searchVal" placeholder="输入用户名或手机号" lay-verify="required"/>
+        </div>
+        <button class="layui-btn" lay-event="search_btn">搜索</button>
+        <span class="layui-btn" lay-event="flash_btn"><i class="layui-icon">&#xe669;</i></span>
+<!--        <div class="layui-inline" style="float: right">-->
+            <span class="layui-btn layui-btn-normal add_btn" lay-event="add_btn">新增管理员</span>
+<!--        </div>-->
+    </script>
+    <!--操作-->
+    <script type="text/html" id="userListBar">
+        <a class="layui-btn layui-btn-xs layui-btn-warm" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a>
+    </script>
+</form>
+<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../../layui/layui.js"></script>
+<script type="text/javascript" src="adminList.js"></script>
+</body>
+</html>

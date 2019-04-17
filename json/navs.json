@@ -1,0 +1,62 @@
+{
+  "navs1": [
+    {
+      "title": "用户管理",
+      "icon": "&#xe770;",
+      "href": "page/member/memberList.html",
+      "spread": false
+    },
+    {
+      "title": "资讯管理",
+      "icon": "icon-text",
+      "href": "page/information/informationList.html",
+      "spread": false
+    },
+    {
+      "title": "轮播图管理",
+      "icon": "&#xe634;",
+      "href": "page/slideshow/slideshowList.html",
+      "spread": false
+    },
+    {
+      "title": "系统设置",
+      "icon": "&#xe716;",
+      "href": "",
+      "spread": false,
+      "children": [
+        {
+          "title": "管理员管理",
+          "icon": "&#xe613;",
+          "href": "page/admin/adminList.html",
+          "spread": false
+        },
+        {
+          "title": "系统参数",
+          "icon": "&#xe716;",
+          "href": "page/system/parameterList.html",
+          "spread": false
+        }
+      ]
+    }
+  ],
+  "navs2": [
+    {
+      "title": "用户管理（预留）",
+      "icon": "&#xe770;",
+      "href": "",
+      "spread": false
+    },
+    {
+      "title": "订单管理（预留）",
+      "icon": "&#xe770;",
+      "href": "",
+      "spread": false
+    },
+    {
+      "title": "资讯管理（预留）",
+      "icon": "&#xe60a;",
+      "href": "",
+      "spread": false
+    }
+  ]
+}
