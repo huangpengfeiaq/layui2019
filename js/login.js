@@ -5,7 +5,6 @@ layui.use(['form', 'layer', 'jquery'], function () {
 
     //全局URL设置
     $.cookie('tempUrl', "http://localhost:8088/", {path: '/'});
-    // $.cookie('tempUrl', "http://122.112.225.34:8088/", {path: '/'});
 
     //禁止后退按钮
     if (window.history && window.history.pushState) {
